@@ -130,21 +130,26 @@
                 <div class="container">
                     <div class="row" id="registrationForm">
                         <div class="col-md-6 mx-auto col-sm-12">
-                            <form class="card-img-form">
-                                <h3><b>Send a Message to Me</b></h3>
-                                <br />
-                                <div class="form-group">
-                                    <label for="Full Name">Full name</label>
-                                    <input type="text" placeholder="Name" class="form-control">
-                                </div>
+                            <form class="card-img-form" method="POST" data-netlify="true">
 
-                                <div class="form-group">
-                                    <label for="">Description</label>
-                                    <input type="text" placeholder="Write anything" class="form-control">
-                                </div>
+                                    <h3><b>Send a Message to Me</b></h3>
+                                    <br />
 
-                                <button type="button" class="btn btn-primary">Send</button>
-                            </form>
+                                    <div class="form-group">
+                                        <label for="Full Name">Full name</label>
+                                        <input type="text" name="name" placeholder="Name" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <input name="message" type="text" placeholder="Write anything"
+                                            class="form-control">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Send</button>
+
+
+                                </form>
                         </div>
                     </div>
                 </div>
