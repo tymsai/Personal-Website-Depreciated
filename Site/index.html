@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>T.Y.M.SAI</title>
+    <link rel="icon" href="./img/Mani.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script>
+        console.log('hello');
+        console.log('hit Moon symbol to launch dmode');
+        function dmode() {
+            dark();
+            console.log('function 2 running');
+            console.log('dark launch successful');
+            /*nav();*/
+        }
+        function dark() {
+            var element = document.body;
+            var atom = document.getElementById('navic');
+            var imagea = document.getElementById('myimage');
+           /* var imageb = document.getElementById('nabr');
+            imageb.classList.toggle('nA');*/
+            imagea.classList.toggle('dmi');
+            atom.classList.toggle('hk');
+            element.classList.toggle("dark");
+        
+        }
+
+        /*var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+            darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })*/
+
+        /*function dark() {
+            var element = document.getElementsByTagName('body')[0];
+            var navitems = document.getElementsById('navic')[0];
+            navitems.addEventListener('click', function(){
+            navitems.classList.toggle('hk');
+            element.classList.toggle('dark');
+            element.classList.toggle('hk');
+        })*/
+        /*
+        function nav() {
+        }
+        const chk = document.getElementById('chk');
+        chk.addEventListener('change', () => {
+	    document.body.classList.toggle('dark');
+        });*/
+    </script>
+</head>
+
+<body >
+        <nav  class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <!--<div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">                    
+                    <div onclick="dmode()" class="ball"></div>
+                </label>
+            </div>-->
+            <img id="myimage" onclick="dmode()" src="./img/download.png" width="40px" alt="">
+
+            <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span  class="navbar-toggler-icon"></span>
+            </button>
+
+            <div   class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movieList">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="navic" class="headkill">
+            <h1  class="heading">
+                <br><br>
+                HI THERE !
+                <br><br>
+            </h1>
+            <br><br>
+            <img class="mani" src="./img/arrow.png" width="10%" alt="mani">
+        </div>
+
+        <div id="about">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h2>About</h2>
+                </div>
+                <hr />
+                <div class="col-12">
+                    <p class="lead">
+                        Passionate coder and Eager to learn,
+                        <br>
+                        <br>
+                        Studying B.Tech in Information Technology.
+                        <br>
+                        Currently learning Web Development,
+                        <br>
+                        I know C, C++, JScript, and <br> All other Basic Computing Skillzz
+                        <br><br> Wants to become a <br>Full-Stack Developer
+                        <br><br>Know what ?<br>I can take some pretty good shots.
+                    </p>
+                </div>
+
+                <div class="col-12">
+                    <img class="imgbyme" src="img/tuber.jpg" class="img-fluid" />
+                    <div class="copy">&copy 2021 T.Y.M.SAI</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h2>Projects</h2>
+                </div>
+                <hr />
+            </div>
+        </div>
+
+
+        <div id="movieList">
+            <center>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/logo home 2.png" />
+                        <div class="card-body">
+                            <h4 class="card-title">Mi Home Website<p>2020</p>
+                            </h4>
+                            <p class="card-text">
+                                A simple copy of Xiaomi website India, made using HTML5 & CSS3, the site is
+                                LIVE! better to view in a large screen
+                            </p>
+                            <a target="_blank" href="https://unruffled-murdock-6e73fc.netlify.app/"
+                                class="btn btn-outline-secondary">Open Site</a>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <div id="contactUs">
+                <div class="row text-center welcome">
+                    <div class="col-12">
+                        <h2>CONTACT</h2>
+                        <hr />
+                    </div>
+                </div>
+
+
+
+                <div class="container">
+                    <div class="row" id="registrationForm">
+                        <div class="col-md-6 mx-auto col-sm-12">
+                            <form class="card-img-form" method="POST" data-netlify="true">
+
+                                <h3><b>Send a Message to Me</b></h3>
+                                <br />
+
+                                <div class="form-group">
+                                    <label for="Full Name">Full name</label>
+                                    <input type="text" name="name" placeholder="Name" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <input name="message" type="text" placeholder="Write anything" class="form-control">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Send</button>
+
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <div class="col-12 social padding">
+                        <a target="_blank" href="https://www.linkedin.com/in/t-y-m-sai-4ab087203/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/tymsai"><i class="fab fa-github"></i></a>
+                        <a href="mailto:tymsai6076@gmail.com" target="_tymsai6076@gmail.com"><i
+                                class="far fa-envelope"></i></a>
+                    </div>
+                </center>
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row text-center">
+
+                            <div class="col-12 ft">
+                                &#8593
+                                &#8593
+                                Be in touch in all these
+                                &#8593
+                                &#8593
+                                <br>
+                                See you later until then BYE
+                                <hr class="light-100 fto">
+                                Bhilai, Chattisgarh, India.
+                                <h5>&copy;2021 T.Y.M.SAI <br> All Rights Reserved</h5>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+              
+</body>
+
+</html>
